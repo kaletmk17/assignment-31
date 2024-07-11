@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mens Casual Clogs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img.01.jpg" alt="Clogs" class="main-img" id="main-img">
+
+    <div class="product-img-container">
+        <img src="img.01.jpg" alt="Clogs" class="product-img" onclick="changeimg(1)">
+        <img src="img.02.jpg" alt="Clogs" class="product-img" onclick="changeimg(2)">
+        <img src="img.03.jpg" alt="Clogs" class="product-img" onclick="changeimg(3)">
+        <img src="img.04.jpg" alt="Clogs" class="product-img" onclick="changeimg(4)">
+        <img src="img.05.jpg" alt="Clogs" class="product-img" onclick="changeimg(5)">
+    </div>
+
+    <script>
+        function changeimg(num){
+            const img = document.getElementById("main-img")
+
+            if(num==1){
+                img.src = "./img.01.jpg"
+            }
+            else if (num==2){
+                img.src = "./img.02.jpg"
+            }
+            else if (num==3){
+                img.src = "./img.03.jpg"
+            }
+            else if (num==4){
+                img.src = "./img.04.jpg"
+            }
+            else{
+                img.src = "./img.05.jpg"
+            }
+        }
+    </script>
+</body>
+</html>
